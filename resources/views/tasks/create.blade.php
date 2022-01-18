@@ -26,7 +26,7 @@
                 <option value="">---selected category---</option>
                  @foreach($category_list as $category)
                    <option value="{{ $category->id }}" {{ old('category_id')==$category->id ? 'selected' : '' }}>{{ $category->name }}</option>
-                 @endforeach
+                   @endforeach
              </select>
         </div>
 
@@ -40,7 +40,7 @@
              <select name="status" id="status" class="form-control">
                  <option value="">---selected status---</option>
                  @foreach ($task_status as $value => $description)
-                     <option value="{{ $value }}" {{ old('status')==$value  ? 'selected' : '' }}>{{ $description }}</option>
+                     <option value="{{ $value }}" {{ old('status')==strval($value)  ? 'selected' : '' }}>{{ $description }}</option>
                  @endforeach
              </select>
         </div>

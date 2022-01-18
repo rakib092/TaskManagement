@@ -3,13 +3,14 @@
     <div id="navb" class="navbar-collapse collapse hide">
       <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" href="{{url('/dashboard')}}">Dashboard</a>
+            <a class="nav-link {{ Request::is('dashboard*') ? 'active' : '' }}" href="{{url('/dashboard')}}">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{url('/categories')}}">Category</a>
+          <a class="nav-link {{ Request::is('categories*') ? 'active' : '' }}" href="{{url('/categories')}}
+          ">Category</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{url('/tasks')}}">Task</a>
+          <a class="nav-link {{ Request::is('tasks*') ? 'active' : '' }}" href="{{url('/tasks')}}">Task</a>
         </li>
 
       </ul>
