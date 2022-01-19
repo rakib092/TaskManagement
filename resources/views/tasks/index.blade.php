@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Dashboard')
+@section('title','Task')
 @section('content')
 
     <a class="btn btn-success" href="{{url('tasks/create')}}">Add New Task</a>

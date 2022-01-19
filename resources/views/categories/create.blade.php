@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Dashboard')
+@section('title','Create')
 @section('content')
    <h1>Create Category :: </h1>
    <hr>
